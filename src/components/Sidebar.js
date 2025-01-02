@@ -1,4 +1,7 @@
 import React from 'react'
+import GitHubIcon from "../images/GitHubIcon.svg";
+import LinkedInIcon from "../images/LinkedInIcon.png"
+import ResumeIcon from "../images/ResumeIcon.png"
 
 const sections = [
   { id: 'about', label: 'About' },
@@ -22,10 +25,54 @@ const Sidebar = ( {activeSection} ) => {
             </a>
           )
         })}
-        {/* <a href="#about" className="block py-1 hover:underline">About</a>
-        <a href="#experience" className="block py-1 hover:underline">Experience</a>
-        <a href="#projects" className="block py-1 hover:underline">Projects</a> */}
       </nav>
+
+      <div className="mt-20 mb-5">
+
+        <div className="flex justify-center space-x-8 mb-4">
+
+          <a
+            href="https://github.com/mistryrohan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-105 transition-transform"
+          >
+            <img
+              src={GitHubIcon}
+              alt="GitHub"
+              className="w-10 h-10 md:w-11 md:h-11"
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mistry-rohan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-105 transition-transform"
+          >
+            <img
+              src={LinkedInIcon}
+              alt="LinkedIn"
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+          </a>
+
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-105 transition-transform"
+          >
+            <img
+              src={ResumeIcon}
+              alt="Resume"
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+          </a>
+        </div>
+
+        <p className="text-base">rohan.mistry@mail.utoronto.ca</p>
+      </div>
 
     </aside>
   )
