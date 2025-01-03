@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExperienceCard = ( {position, company, dateRange, location, description, skills} ) => {
   return (
-    <div className='bg-gray-800 p-6 rounded-md mb-5 shadow-md
+    <div className='p-6 rounded-md mb-5 shadow-md ml-5 mr-5
     ring-1 ring-gray-700 ring-offset-2 ring-offset-gray-900'>
       
       <div className='flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mb-3'>

@@ -11,7 +11,7 @@ const sections = [
 
 const Sidebar = ( {activeSection} ) => {
   return (
-    <aside className="flex flex-col items-center text-center">
+    <aside className="flex flex-col items-center text-center ">
       <h1 className="text-3xl font-bold mt-10 mb-4">Rohan Mistry</h1>
       <p>Computer Science @ University of Toronto</p>
       <p className="mb-4">Software Engineering Intern @ BlueCat</p>
@@ -20,7 +20,7 @@ const Sidebar = ( {activeSection} ) => {
         {sections.map((section) => {
           const isActive = section.id === activeSection;
           return (
-            <a key={section.id} href={`#${section.id}`} className={`block py-1 hover:underline mb-5 ${isActive ? 'text-blue-400' : 'hover:text-blue-400'}`}>
+            <a key={section.id} href={`#${section.id}`} className={`block py-1 hover:underline text-xl font-bold tracking-wide mb-5 ${isActive ? 'text-blue-400' : 'hover:text-blue-400'}`}>
               {section.label}
             </a>
           )
@@ -35,7 +35,7 @@ const Sidebar = ( {activeSection} ) => {
             href="https://github.com/mistryrohan"
             target="_blank"
             rel="noopener noreferrer"
-            className="transform hover:scale-105 transition-transform"
+            className="transform hover:scale-110 transition-transform"
           >
             <img
               src={GitHubIcon}
@@ -48,7 +48,7 @@ const Sidebar = ( {activeSection} ) => {
             href="https://www.linkedin.com/in/mistry-rohan/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transform hover:scale-105 transition-transform"
+            className="transform hover:scale-110 transition-transform"
           >
             <img
               src={LinkedInIcon}
@@ -61,7 +61,7 @@ const Sidebar = ( {activeSection} ) => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="transform hover:scale-105 transition-transform"
+            className="transform hover:scale-110 transition-transform"
           >
             <img
               src={ResumeIcon}

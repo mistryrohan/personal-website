@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="mt-10">
+    <section id="about" className="mt-10 ml-5 mr-5">
       {/* <h2 className="text-3xl font-bold mb-3">About Me</h2> 
       TODO I only want these to show up if it is the active section*/}
       <p className='leading-relaxed'>
