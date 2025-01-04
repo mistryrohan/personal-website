@@ -2,8 +2,7 @@ import React from 'react'
 
 const ExperienceCard = ( {position, company, dateRange, location, description, skills} ) => {
   return (
-    <div className='p-6 rounded-md mb-5 shadow-md ml-5 mr-5
-    ring-1 ring-gray-700 ring-offset-2 ring-offset-gray-900'>
+    <div className='p-6 rounded-md mb-5 shadow-md ml-10 mr-40'>
       
       <div className='flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mb-3'>
         <p className='text-base text-gray-200'>{dateRange}</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import GitHubIcon from "../images/GitHubIcon.svg";
+import GitHubIcon from "../images/GithubIcon.png";
 import LinkedInIcon from "../images/LinkedInIcon.png"
 import ResumeIcon from "../images/ResumeIcon.png"
 
@@ -11,7 +11,7 @@ const sections = [
 
 const Sidebar = ( {activeSection} ) => {
   return (
-    <aside className="flex flex-col items-center text-center ">
+    <aside className="flex flex-col items-center text-center mt-5">
       <h1 className="text-3xl font-bold mt-10 mb-4">Rohan Mistry</h1>
       <p>Computer Science @ University of Toronto</p>
       <p className="mb-4">Software Engineering Intern @ BlueCat</p>

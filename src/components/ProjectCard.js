@@ -2,9 +2,8 @@ import React from 'react'
 
 const ProjectCard = ( {title, description, image, repoLink, skills} ) => {
   return (
-    <a href={repoLink} target='_blank' rel="noopener noreferrer" className='flex items-start gap-4 mb-5 p-3 
-    ml-5 mr-5 cursor-pointer rounded-lg shadow-md transition-colors hover:bg-gray-700
-    ring-1 ring-gray-700 ring-offset-2 ring-offset-gray-900'>
+    <a href={repoLink} target='_blank' rel="noopener noreferrer" className='flex items-start gap-4 mb-8 p-3 
+    ml-10 mr-40 cursor-pointer rounded-lg shadow-md transition-colors hover:bg-gray-700'>
         <img src={image} alt={`${title} image`} className='w-32 h-24 object-cover rounded flex-shrink-0'/>
 
         <div className='flex flex-col justify-between w-full'>
