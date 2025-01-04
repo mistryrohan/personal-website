@@ -6,7 +6,7 @@ const projectsData = [
     {
       id: 1,
       title: "Interactive Scheduling System",
-      description: "words words words words words words words words words words words words words words words words",
+      description: "Interactive scheduling system for one-on-one meetings. Includes email reminders, setting meeting priority, and a calendar to track meetings. ",
       image: ScheduleImage, 
       repoLink: "https://github.com/mistryrohan/Scheduling-System-UI",
       skills: ['React', 'JavaScript', 'Django', 'Python', 'SQLite'],
@@ -14,7 +14,7 @@ const projectsData = [
     {
       id: 2,
       title: "Image AI PacMan",
-      description: "words words words words words words words words words words words words words words words words",
+      description: "The original Pac-Man game reimagined using Cohere's APIs to add a story layer. Made at UofTHacks 11.",
       image: PacManImage,
       repoLink: "https://github.com/mistryrohan/Image-AI-Pac-Man",
       skills: ['Python', 'PyGame'],
@@ -22,7 +22,7 @@ const projectsData = [
     {
       id: 3,
       title: "UofT SoundSpace | Quiet Study Spaces Locator",
-      description: "words words words words words words words words words words words words words words words words",
+      description: "Mobile application for UofT students to discover quiet study spaces on campus. Made at UofTHacks 10.",
       image: SoundSpaceImage,
       repoLink: "https://github.com/mistryrohan/Soundspace",
       skills: ['JavaScript', 'React Native'],
