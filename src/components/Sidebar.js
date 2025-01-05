@@ -13,8 +13,8 @@ const Sidebar = ( {activeSection} ) => {
   return (
     <aside className="flex flex-col items-center text-center mt-5">
       <h1 className="text-3xl font-bold mt-10 mb-4">Rohan Mistry</h1>
-      <p>Computer Science @ University of Toronto</p>
-      <p className="mb-4">Software Engineering Intern @ BlueCat</p>
+      <p>Software Engineering Intern @ BlueCat</p>
+      <p className="mb-4">Computer Science @ University of Toronto</p>
 
       <nav className='flex flex-col gsp-2 mt-10'>
         {sections.map((section) => {
