@@ -6,7 +6,7 @@ const experienceData = [
       dateRange: "May 2024 — Present",
       location: "Toronto, ON",
       description: `Worked across different teams on both front-end and back-end overhauls. Used TypeScript and React to implement new functionality, optimize components, and fix critical defects. Developed REST API endpoints in Java, resolved back-end defects, and wrote system tests using JUnit to enable real-time front-end updates and reduce test failures. Wrote and maintained Jest test suites to increase coverage by 30%. Supported team onboardings for the new UI by establishing best practices and providing guidance to ensure smooth transitions for engineers.`,
-      skills: ["TypeScript", "React", "Java", "JUnit", "Jest"],
+      skills: ["TypeScript", "React", "Java", "JUnit", "Jest", "Selenium"],
     },
     {
       id: 2,

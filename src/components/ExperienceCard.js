@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExperienceCard = ( {position, company, dateRange, location, description, skills} ) => {
   return (
-    <div className='p-6 rounded-md mb-5 shadow-md ml-10 mr-40'>
+    <div className='sm:p-6 rounded-md mb-10 md:mb-4 shadow-md mx-4 sm:mx-10 md:mx-16 lg:ml-10 lg:mr-40'>
       
       <div className='flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mb-3'>
         <p className='text-base text-gray-200'>{dateRange}</p>
@@ -18,9 +18,9 @@ const ExperienceCard = ( {position, company, dateRange, location, description, s
         {description}
       </div>
 
-      <div className='flex flex-wrap gap-3 mb-4'>
+      <div className='flex flex-wrap gap-2 sm:gap-3 mb-4'>
         {skills.map((skill, i) => (
-            <span key={i} className='text-sm bg-gray-700 text-gray-200 px-3 py-1 rounded-full'>
+            <span key={i} className='text-sm bg-gray-700 text-gray-200 px-2 sm:px-3 py-1 rounded-full'>
                 {skill}
             </span>
         ))}
