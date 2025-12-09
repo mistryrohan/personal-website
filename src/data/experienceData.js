@@ -1,11 +1,20 @@
 const experienceData = [
     {
+      id: 4,
+      position: "Software Developer",
+      company: "University of Toronto - IQBank",
+      dateRange: "September 2025 — Present",
+      location: "Toronto, ON",
+      description: `I shipped anonymous posting and dark mode features in React and TypeScript, lifting user engagement by 45%. I built a front-end test suite from scratch and integrated it into GitHub Actions to prevent UI regressions. I refactored components, led collaborative code reviews, and prepared demos and notes for the ARIA conference.`,
+      skills: ["React", "TypeScript", "Express.js", "Vitest", "Prisma", "Tailwind"],
+    },
+    {
       id: 1,
       position: "Software Engineer Intern",
       company: "BlueCat",
-      dateRange: "May 2024 — Present",
+      dateRange: "May 2024 — September 2025",
       location: "Toronto, ON",
-      description: `I contributed to a TypeScript and React front-end overhaul, implementing new functionality, optimizing components, and fixed critical defects to accelerate a major product release. Also, I developed REST API endpoints in Java, resolved back-end defects, fixed PostgreSQL queries, and wrote system tests using JUnit to enable real-time front-end updates and reduce test failures by 15%. Additionally, I wrote and maintained Jest test suites to increase coverage by 30% and ensure code quality was maintained. I also supported team onboardings for the new UI, performed code reviews, and provided guidance to ensure smooth transitions for new engineers.`,
+      description: `I contributed to a TypeScript and React front-end overhaul. I optimized components and fixed critical defects to accelerate a major product release. Also, I developed REST API endpoints in Java and fixed PostgreSQL queries. I wrote system tests using JUnit to help reduce test failures by 15%. Additionally, I maintained Jest test suites to increase coverage by 30%. I also supported team onboardings for the new UI, performed code reviews, and provided guidance to ensure smooth transitions for new engineers.`,
       skills: ["TypeScript", "React", "Java", "JUnit", "Jest", "PostgreSQL", "Selenium"],
     },
     {

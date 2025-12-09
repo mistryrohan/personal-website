@@ -11,10 +11,37 @@ const sections = [
 
 const Sidebar = ( {activeSection} ) => {
   return (
-    <aside className="flex flex-col items-center text-center mt-5">
-      <h1 className="text-3xl font-bold mt-10 mb-4">Rohan Mistry</h1>
-      <p>Software Engineering Intern @ BlueCat</p>
-      <p className="mb-4">Computer Science @ University of Toronto</p>
+    <aside className="flex flex-col items-center text-center mt-5 mb-3">
+      <h1 className="text-4xl font-bold mt-10 mb-4">Rohan Mistry</h1>
+
+      <div className="text-lg text-gray-300 space-y-1 mb-6">
+        <p>Computer Science @ University of Toronto</p>
+
+        <p>
+          Building{" "}
+          <a
+            href="https://iqbank.teach.cs.toronto.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-blue-100 hover:text-blue-400 underline decoration-dotted underline-offset-4 transition-colors"
+          >
+            IQBank
+          </a>
+        </p>
+
+        <p>
+          Previous Software Engineering Intern @{" "}
+          <a
+            href="https://bluecatnetworks.com/blog/exciting-product-update-introducing-bluecat-integrity-x/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-blue-100 hover:text-blue-400 underline decoration-dotted underline-offset-4 transition-colors"
+          >
+            BlueCat
+          </a>
+        </p>
+      </div>
+
 
       <nav className='flex flex-col gsp-2 mt-10'>
         {sections.map((section) => {
@@ -71,7 +98,12 @@ const Sidebar = ( {activeSection} ) => {
           </a>
         </div>
 
-        <p className="text-base">rohan.mistry@mail.utoronto.ca</p>
+        <a
+          href="mailto:rohan.mistry@mail.utoronto.ca"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 text-md text-gray-300 hover:border-blue-400 hover:text-blue-300 hover:bg-gray-800/60 transition"
+        >
+          <span className="font-large">rohan.mistry@mail.utoronto.ca</span>
+        </a>
       </div>
 
     </aside>

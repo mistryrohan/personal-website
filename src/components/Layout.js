@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Sidebar from './Sidebar';
 
 const Layout = ({ children } ) => {
@@ -27,8 +27,9 @@ const Layout = ({ children } ) => {
   }, [])
 
   return (
-    <div className="relative min-h-screen w-screen text-white bg-gradient-to-br from-indigo-900 via-gray-900 to-black">
-        <div className='w-full p-6 md:fixed md:top-0 md:left-0 md:h-screen md:w-[35%]'>
+    <div className="relative min-h-screen w-screen text-white bg-slate-900">
+        <div className="w-full p-6 md:fixed md:top-0 md:left-0 md:h-screen md:w-[35%] md:bg-slate-800 md:border-slate-800">
+
             <Sidebar activeSection={activeSection} />
         </div>
      

@@ -4,6 +4,15 @@ import SoundSpaceImage from "../images/SoundSpaceImage.png";
 import clifyScreenshot from "../images/clifyScreenshot.png";
 
 const projectsData = [
+      {
+      id: 5,
+      title: "LSM-Tree Key-Value Store",
+      description:
+        "High-performance key-value store built from scratch using C++. Uses an LSM-tree architecture, bloom filters, B-tree SSTs, and a buffer pool to optimize disk I/O and storage efficiency.",
+      image: clifyScreenshot,
+      repoLink: "https://clify-omega.vercel.app/",
+      skills: ["C++", "GoogleTest"],
+    },
     {
       id: 1,
       title: "CLI-fy",

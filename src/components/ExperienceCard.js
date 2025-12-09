@@ -1,28 +1,58 @@
-import React from 'react'
-
-const ExperienceCard = ( {position, company, dateRange, location, description, skills} ) => {
+const ExperienceCard = ({ position, company, dateRange, location, description, skills }) => {
   return (
-    <div className='sm:p-6 rounded-md mb-10 md:mb-4 shadow-md mx-4 sm:mx-10 md:mx-16 lg:ml-10 lg:mr-40'>
+    <div className="
+      group relative
+      mx-4 sm:mx-10 md:mx-16 lg:ml-16 lg:mr-40 mb-8
+      p-6 sm:p-8
+      rounded-xl
+      bg-gray-900/50
+      border border-gray-800
+      transition-all duration-200
+      hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-2xl hover:bg-gray-900
+    ">
       
-      <div className='flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mb-3'>
-        <p className='text-base text-gray-200'>{dateRange}</p>
-        <p className='text-base text-gray-200'>{location}</p>
+      {/* Header Section */}
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+        
+        <div className="md:mb-0">
+          <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+            {position}
+          </h3>
+          <p className="text-lg font-medium text-blue-400 mt-1">
+            {company}
+          </p>
+        </div>
+
+        {/* Date and Location */}
+        <div className="flex flex-col md:items-end">
+          <p className="text-base font-semibold text-gray-300">{dateRange}</p>
+          <p className="text-md text-gray-300">{location}</p>
+        </div>
+
       </div>
 
-      <div className='mb-4'>
-        <h3 className="text-xl font-semibold text-white">{position}</h3>
-        <h2 className='text-lg font-semibold text-white'>{company}</h2>
-      </div>
-
-      <div className='text-gray-200 mb-4'>
+      {/* Description */}
+      <div className="text-gray-300/90 mb-8 text-md leading-relaxed">
         {description}
       </div>
 
-      <div className='flex flex-wrap gap-2 sm:gap-3 mb-4'>
+      {/* Skills Section - Consistent Blue */}
+      <div className="flex flex-wrap gap-3">
         {skills.map((skill, i) => (
-            <span key={i} className='text-sm bg-gray-700 text-gray-200 px-2 sm:px-3 py-1 rounded-full'>
-                {skill}
-            </span>
+          <span 
+            key={i} 
+            className="
+              px-4 py-1.5
+              text-sm font-medium
+              rounded-full
+              text-blue-200 bg-blue-900/30
+              transition-all duration-200
+              hover:bg-blue-600 hover:text-white
+              cursor-default
+            "
+          >
+            {skill}
+          </span>
         ))}
       </div>
 
@@ -30,4 +60,4 @@ const ExperienceCard = ( {position, company, dateRange, location, description, s
   )
 }
 
-export default ExperienceCard
+export default ExperienceCard;
