@@ -1,8 +1,8 @@
 const ExperienceCard = ({ position, company, dateRange, location, description, skills }) => {
   return (
     <div className="
-      group relative
-      mx-4 sm:mx-10 md:mx-16 lg:ml-16 lg:mr-40 mb-8
+      bg-isometric group relative
+      mb-8 w-full
       p-6 sm:p-8
       rounded-xl
       bg-gray-900/50

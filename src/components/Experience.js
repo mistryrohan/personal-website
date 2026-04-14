@@ -4,7 +4,7 @@ import experienceData from '../data/experienceData';
 
 const Experience = () => {
   return (
-    <section id='experience' className='mt-20 mb-20 my-5'>
+    <section id="experience" className="mx-auto mt-20 mb-20 max-w-3xl px-6">
 
       {experienceData.map(job => (
         <ExperienceCard

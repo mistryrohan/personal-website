@@ -4,7 +4,7 @@ import projectData from '../data/projectData';
 
 const Projects = () => {
   return (
-    <section id='projects' className='mb-20 my-5'>
+    <section id="projects" className="mx-auto mb-20 max-w-3xl px-6">
       
       {projectData.map(project => (
         <ProjectCard

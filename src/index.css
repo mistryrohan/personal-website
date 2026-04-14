@@ -6,3 +6,18 @@ body {
   margin: 0;  
   font-family: 'Inter', sans-serif; 
 }
+
+.bg-isometric {
+  background-image: url('./assets/patterns/isometric.svg');
+  background-repeat: repeat;
+}
+
+.bg-grid-nodes {
+  background-image: url('./assets/patterns/grid-nodes.svg');
+  background-repeat: repeat;
+}
+
+.bg-flow-network {
+  background-image: url('./assets/patterns/flow-network.svg');
+  background-repeat: repeat;
+}

@@ -7,8 +7,8 @@ const ProjectCard = ({ title, description, image, repoLink, skills }) => {
       target='_blank' 
       rel="noopener noreferrer" 
       className='
-        group relative flex flex-col sm:flex-row items-start gap-6 
-        mx-4 sm:mx-10 md:mx-16 lg:ml-16 lg:mr-40 mb-8 
+        bg-isometric group relative flex w-full flex-col sm:flex-row items-start gap-6 
+        mb-8 
         p-6 sm:p-8 
         rounded-xl 
         bg-gray-900/50 
